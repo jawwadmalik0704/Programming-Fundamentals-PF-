@@ -1,0 +1,13 @@
+#include<stdio.h> 
+int main() 
+{ 
+int a; 
+int b; 
+scanf("%d", &a); 
+scanf(" %d", &b); 
+printf(" the equation is: a + b * (a - b) / 2 \n"); 
+printf("result = %d \n", ( a + b * (a-b) / 2 )); 
+printf("Firstly a-b would be calculated, then as * and divide hasthe same rule of precedance  so b would be multiplied by teh result and then divide by 2, lastly a would be added"); 
+return 0; 
+}
+
