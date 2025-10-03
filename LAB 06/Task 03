@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+	int nnn,a=0,b=1,sum=0,next;
+	printf("Enter a number of terms of sequence\n");
+	scanf(" %d",&nnn);
+	printf("Fibonacci sequence up to term %d is:",nnn);
+	for(int i=0;i<=nnn;i++){
+		printf("%d ",a);
+		sum+=a;
+		next=a+b;
+		a=b;
+		b=next;
+	}
+	printf("\nSum of Fabinacci sequence is: %d\n",sum);
+	return 0;
+}
