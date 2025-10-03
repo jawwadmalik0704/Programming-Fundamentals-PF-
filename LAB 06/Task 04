@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(){
+	char ans,abc;
+	int count_vowel=0,count_consonants=0;
+	do{
+		printf("Enter an alphabet(a to z)");
+		scanf(" %c",&abc);
+		if(abc=='a'|| abc=='A' || abc=='e' || abc=='E' || abc=='i' || abc=='I'|| abc=='o'|| abc=='O' || abc=='u' || abc=='U'){
+			count_vowel++;
+			printf("You Entered a vowel %c\n",abc);
+		}else{
+			count_consonants++;
+			printf("You Entered a consonant %c\n",abc);
+		}
+		
+		
+		
+		printf("Do you want to continue?(y for yes and n for no)");
+		scanf(" %c",&ans);
+	}while(ans=='y');
+	printf("You entered vowel %d times and consonant %d times",count_vowel,count_consonants);
+	return 0;
+}
